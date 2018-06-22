@@ -11,4 +11,5 @@ git submodule update --recursive --remote sockeye
 cd sockeye
 git checkout $SOCKEYE_COMMIT
 
+chmod a+x $rootdir/install/testing.sh
 $rootdir/install/testing.sh -s $rootdir/sockeye -e sockeye_gpu
