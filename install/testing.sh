@@ -78,6 +78,7 @@ export PYTHONNOUSERSITE=1
 
 pip install 'numpy==1.13.3' --force-reinstall
 pip install 'tensorboard==1.8.0' --force-reinstall
+pip install 'mxnet-cu90==1.1.0' --force-reinstall
 
 # 2. clone sockeye NMT as submodule and install
 cd $SOCKEYE
