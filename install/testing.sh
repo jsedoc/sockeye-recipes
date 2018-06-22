@@ -4,6 +4,13 @@
 
 set -e
 
+cd /content/sockeye-recipes
+git pull
+cd /content
+
+wget https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
+bash Anaconda3-5.2.0-Linux-x86_64.sh -b -f -p conda
+
 PATH=$PATH:/content/sockeye-recipes/sockeye/conda/bin
 
 CONDA_HOME=./.conda/envs
