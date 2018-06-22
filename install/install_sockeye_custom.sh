@@ -79,6 +79,9 @@ fi
 source activate $venv
 export PYTHONNOUSERSITE=1
 
+pip install 'numpy==1.13.3' --force-reinstall
+pip install 'tensorboard==1.8.0' --force-reinstall
+
 # 2. clone sockeye NMT as submodule and install
 cd $SOCKEYE
 if [[ "$DEVICE" == "gpu" ]]; then
