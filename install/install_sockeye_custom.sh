@@ -4,7 +4,10 @@
 
 set -e
 
-CONDA_HOME=$HOME/.conda/envs
+wget https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
+bash Anaconda3-5.2.0-Linux-x86_64.sh -b -f -p conda
+
+CONDA_HOME=./.conda/envs
 
 function errcho() {
   >&2 echo $1
